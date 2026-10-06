@@ -4,20 +4,51 @@
         <title>SALA RA</title>
     </head>
     <body>
-        <h2>QUAL A DATA DE SEU AGENDAMENTO?</h2>
-            <input type="datetime-local">
-        <h2>PARA QUAL JURÍDICO</h2>
-            <input type="text">
-        <h2>QUAL O TEMA DA REUNIÃO</h2>
+        <form>
+        <h1>AGENDAMENTO DE SALA</h1>
+        <hr>
+        <p><strong>Qual a data de seu agendamento?</strong></p>
+            <input type="date" id="data" name="data">
+            <input type="time" id="hora" name="hora">
+        <p><strong>Jurídico:</strong></p>
+            <input type="text" id="juridico" name="juridico">
+        <p><strong>Advogado(a) Responsável:</strong></p>
+            <input type="text" id="advogado" name="advogado">
         <p><strong>Selecione o tema:</strong></p>
             <select name="tema" id="tema">
                 <option value="Alinhamento Interno">Alinhamento Interno</option>
-                <option value="Alinhamento com cliente">Alinhamento com cliente</option>
-                <option value="Treinamento com cliente">Treinamento com cliente</option>
-                <option value="Audiência">Audiência</option>
+                <option value="Alinhamento com cliente">Alinhamento com Cliente</option>
+                <option value="Treinamento com cliente">Treinamento com Cliente</option>
+                <option value="Audiencia">Audiência</option>
                 <option value="Prospect">Prospect</option>
+                <option value="Treinamento Interno">Treinamento Interno</option>
+                <option value="Entrevista">Entrevista</option>
+                <option value="Tributaria">Reunião Tributária</option>
+                <option value="Societario">Reunião Societária</option>
+                <option value="Trabalhista">Reunião Trabalhista</option>
+                <option value="Contratual">Reunião Contratual</option>
             </select>
-        
-    
+        <p><strong>Selecione o tipo de reunião:</strong></p>
+            <select name="tipo" id="tipo">
+                <option value="Presencial">Presencial</option>
+                <option value="Remota">Remota</option>
+            </select>
+        <p><strong>Selecione a duração da reunião:</strong></p>
+            <select name="duracao" id="duracao">
+                <option value="30">30 minutos</option>
+                <option value="60">1 hora</option>
+                <option value="120">2 horas</option>
+                <option value="180">3 horas</option>
+                <option value="240">4 horas</option>
+            </select>
+        <p><strong>Selecione a sala:</strong></p>
+            <select name="sala" id="sala">
+                <option value="Sala 1">Sala TV</option>
+                <option value="Sala 2">Sala Mesa Redonda</option>
+            </select><br>
+            <br>
+     <button type="submit">Agendar</button>
+    </form>
+    <script src="./js/app.js"></script>
     </body>
 </html>
